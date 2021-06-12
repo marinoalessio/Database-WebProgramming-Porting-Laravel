@@ -16,4 +16,4 @@ Effettuano i normali controlli, come verifica di lunghezza della password e la p
 Gestiscono le sessioni e i cookies con l'interazione del database, riportato su hw2.sql
 
 ### Note
-Ogni richiesta è effettuata tramite fetch evitando caricamenti della pagina. E' supportata la visualizzazione mobile.
+E' supportata la visualizzazione mobile.
