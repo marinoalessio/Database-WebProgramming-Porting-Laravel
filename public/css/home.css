@@ -1,0 +1,254 @@
+html {
+    height: 100%;
+	font-size: 16px;
+	scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  margin: 0;
+  letter-spacing: 1px;
+  font-family: Arial, Helvetica, sans-serif;
+  color:rgb(255, 255, 255);
+  }
+
+nav{
+	height: 40px;
+	background-color: rgba(0, 0, 0, 0.3);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	position: fixed;
+	z-index: 3;
+	backdrop-filter: saturate(180%) blur(20px);
+	font-family: "Josefin Sans","Myriad Set Pro","SF Pro Icons",
+	"Helvetica Neue","Helvetica","Arial", sans-serif;
+	font-size: .8rem;
+	color:rgba(255, 255, 255, 1);
+}
+
+nav #links a{
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: bold;
+	color: inherit;
+	transition: letter-spacing 1s ease, color 1s ease;
+}
+
+nav #links a:hover {
+	color: rgb(204, 0, 255);
+	letter-spacing: 5px;
+}
+
+nav #logo img{
+	width: 30px;
+	margin-left: 20px;
+}
+
+#show-menu{
+	filter: invert(1);
+	position: fixed;
+	z-index: 4;
+	right: 2%;
+	top: 2%;
+	width: 7%;
+	display: none;
+}
+
+header{
+	background-image: url("../images/wallpaper.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+    justify-content: center;
+	height: 500px;
+	position: relative;
+	font-family: Helvetica Neue LT,Helvetica Neue,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
+	color:rgba(255, 255, 255, 1);
+	text-shadow: 0px 0px 7px #000000;
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+header .overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0,0,0,0) 80%);
+  z-index: 1;
+}
+
+header h1{
+	z-index: 2;
+	font-size: 1.5em;
+	text-align:center;
+	margin: 4% 0% 0% 0%;
+}
+
+header p{
+	color:rgb(120, 150, 255);
+	font-size: .5em;
+	z-index: 2;
+	margin-top: 0px;
+	text-align: center;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+section{
+	display: flex;
+    flex-direction: column;
+	text-align: center;
+	font-family: "Josefin Sans","Myriad Set Pro","SF Pro Icons",
+	"Helvetica Neue","Helvetica","Arial", sans-serif;
+	font-size: 1.5rem;
+	color: rgba(255, 255, 255, 1);
+	line-height: 30px;
+	margin: 3% 10% 2% 10%;
+}
+
+section #main{
+	margin: 0% 15% 0% 15%;
+	font-family: Helvetica Neue LT,Helvetica Neue,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
+}
+
+section #main img{
+	width: 25%;
+}
+
+section #events-container{
+	background-color:rgba(120, 0, 255, 0.8);
+	display: flex;
+  	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	box-shadow: 0px 0px 15px rgba(120, 0, 255, 0.5);
+	border-radius: 8px;
+}
+
+section #events-container h1{
+	width:100%;
+	line-height: 20px;
+	font-size: .9em;
+}
+
+section #events-container .flex-item{
+	width: calc(50% - 20px);
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 0%;
+	font-size: .8em;
+}
+
+section #events-container .flex-item .img-container {
+	height: 80%;
+	width: 100%;
+	border-radius: 8px;
+	box-shadow: 0px 0px 15px rgb(0, 0, 0);
+}
+
+section #events-container .flex-item .img-container img{
+	width: 100%;
+	object-fit: cover;
+	height: 100%;
+	border-radius: 8px;
+}
+
+section #events-container .flex-item .info{
+	height: 20%;
+	line-height: 5px;
+}
+
+section #events-container .flex-item .info p{
+	color:rgba(255, 255, 255, 0.5);
+}
+
+#load-more{
+	font-size: .7em;
+	font-family: "Josefin Sans","Myriad Set Pro","SF Pro Icons",
+	"Helvetica Neue","Helvetica","Arial", sans-serif;	
+	width: 100%;
+	font-weight: bold;
+	margin: 3% 0% 3% 0%;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: center;
+}
+
+#load-more a.button{
+	text-decoration: none;
+	text-align: center;
+	color: rgb(120, 0, 255);
+	padding: .5em;
+	border: 2px solid rgb(120, 0, 255);
+	border-radius: 8px;
+}
+
+#load-more a.button:hover{
+	color: rgb(255, 255, 255);
+	border: 2px solid rgb(120, 0, 255);
+	background-color: rgb(120, 0, 255);
+	transition: color 0.5s ease, border 0.5s ease, 
+	background-color 1s ease;
+}
+
+footer{
+	background-color: #15151e;
+	text-align: center;
+	line-height: 30px;
+	border-top: 1px solid rgba(120, 0, 255, 0.7);
+	font-family: 'Ubuntu', sans-serif;
+	color: rgba(255, 255, 255, 0.5);
+	padding: 2%;
+	margin-top: 4%;
+}
+
+@media (max-width: 600px) {
+	section{
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	section #main{
+		margin: 0%;
+	}
+	section #events-container{
+		flex-direction: column;
+	}
+	section #events-container .flex-item{
+		width: calc(100% - 20px);
+	}
+
+	header{
+		height: 300px;
+	}
+
+	#show-menu{
+		display: block;
+	}
+
+	nav{
+		height: auto;
+		position: absolute;
+		display: none;
+	}
+	nav #links{
+		display: flex;
+		flex-direction: column;
+		text-align:center;
+		width:100%;
+	}
+	nav #logo img{
+		display:none;
+	}
+}
